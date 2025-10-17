@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/layout_back"
+
+    >
+
+    <ImageView
+        android:id="@+id/successIcon"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/order_accept"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/accept_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Order has been Accepted"
+        app:layout_constraintTop_toBottomOf="@id/successIcon"
+        app:layout_goneMarginTop="60dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="66dp"
+        />
+
+    <TextView
+        android:id="@+id/order_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your items has been placcd and is on  \n it’s way to being processed"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/accept_heading"
+
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@drawable/button_rounded"
+        android:text="Track Order"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/order_msg"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Order"
+        app:layout_constraintTop_toBottomOf="@id/order_btn"
+        android:layout_marginTop="0dp"
+        android:paddingStart="124dp"
+        android:paddingEnd="124dp"
+        android:paddingTop="24dp"
+        android:textStyle="bold"
+
+        android:paddingBottom="24dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
