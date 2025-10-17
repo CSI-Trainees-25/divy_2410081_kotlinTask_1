@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:id="@+id/favourites"
+            android:text="Favourites"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/favourites"
+            android:background="#44000000"
+            >
+
+            <LinearLayout
+
+                android:layout_gravity="center_vertical"
+                android:id="@+id/favourite_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Sprite Can"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="325ml, Price"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/favourite_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Sprite Can"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="325ml, Price"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/favourite_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Sprite Can"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="325ml, Price"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/favourite_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Sprite Can"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="325ml, Price"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/favourite_item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#66000000"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Sprite Can"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="325ml, Price"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/bottomNav"
+            layout="@layout/bottom_nav"
+            android:layout_alignParentBottom="true"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

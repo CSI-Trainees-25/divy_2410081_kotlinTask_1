@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/del_boy"
+
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#88000000"
+
+        android:textAlignment="center"
+        android:paddingBottom="40dp"
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:lineSpacingExtra="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome \n  To Our Store"
+            android:textSize="45sp"
+            android:layout_marginBottom="0dp"
+            android:textStyle="bold"
+           android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_marginBottom="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Your Groceries in as fast as an hour"
+            android:textAlignment="center"
+            android:textColor="#FCFCFC"
+            >
+
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_height="60dp"
+            android:background="@drawable/button_rounded"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Get Started"
+            android:textColor="@color/white"
+            android:textColorHighlight="#0E172700"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
