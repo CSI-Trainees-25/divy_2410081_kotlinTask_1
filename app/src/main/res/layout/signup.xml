@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+
+   <ImageView
+       android:layout_width="40dp"
+       android:layout_height="55dp"
+       android:src="@drawable/carrot"
+       android:layout_marginTop="60dp"
+       android:layout_marginStart="180dp"
+       android:layout_marginEnd="180dp"
+       android:layout_marginBottom="50dp"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:layout_marginBottom="0dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your credentials to continue"
+            android:textColor="#7C7C7C"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textColor="#7C7C7C"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#7C7C7C"
+            android:textSize="16dp"
+
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E Mail"
+            android:textColor="#7C7C7C"
+            android:textStyle="bold"
+            android:textSize="16dp"
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7C7C7C"
+            android:textSize="16dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#7C7C7C"
+            android:textStyle="bold"
+            android:textSize="16dp"
+
+
+            />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#7C7C7C"
+            android:textSize="16dp"
+
+
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By continuing you agree to our Terms of Service and Privacy Policy"
+        android:textSize="14dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@drawable/button_rounded"
+        android:text="Sign Up"
+        android:textSize="18dp"
+        android:textColor="#FFF9FF"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+</LinearLayout>

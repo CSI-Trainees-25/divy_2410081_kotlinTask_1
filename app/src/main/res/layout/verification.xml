@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter your mobile number"
-        android:textSize="20sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,10 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mobile Number"
+        android:textSize="16sp"
         android:textColor="#7c7c7c"
         app:layout_constraintTop_toBottomOf="@id/titleText"
         app:layout_constraintStart_toStartOf="@id/titleText"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="27dp"/>
 
 
 
@@ -42,6 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
         >
 
         <ImageView
@@ -56,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+880"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:layout_marginStart="8dp"
            />
 
@@ -64,7 +66,6 @@
             android:id="@+id/mobileInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-
             android:inputType="phone"
             android:layout_weight="1"
             android:layout_marginStart="0dp"/>

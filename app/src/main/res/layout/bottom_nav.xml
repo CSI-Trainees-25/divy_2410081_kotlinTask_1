@@ -10,7 +10,6 @@
         android:layout_alignParentBottom="true"
         android:elevation="4dp"
         android:background="#fffff"
-
         android:gravity="center"
         android:orientation="horizontal"
         >

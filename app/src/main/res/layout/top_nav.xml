@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="44dp"
+       android:layout_gravity="center_vertical"
+
+
+
+       >
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:text="9:41"
+           android:layout_marginTop="12dp"
+           android:layout_marginStart="20dp"
+           android:textColor="@color/black"
+           android:textFontWeight="900"
+
+           android:textSize="18dp"
+           />
+
+
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="44dp"
+           android:layout_weight="1"
+           android:layout_alignParentBottom="true"
+           android:elevation="4dp"
+           android:background="#fffff"
+           android:gravity="center"
+           android:orientation="horizontal"
+           >
+
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="11dp"
+               android:src="@drawable/wifi"
+               android:layout_weight="1"/>
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="11dp"
+               android:src="@drawable/network"
+               android:layout_weight="1"/>
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="11dp"
+               android:src="@drawable/battery"
+               android:layout_weight="1"/>
+
+
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
