@@ -393,7 +393,7 @@
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
         android:elevation="4dp"
-        android:background="#fffff"
+
 
         android:gravity="center"
         android:orientation="horizontal"
@@ -410,7 +410,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/userAccount"
+                android:src="@drawable/useraccount"
                 />
 
             <TextView
@@ -433,7 +433,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/userAccount"
+                android:src="@drawable/useraccount"
                 />
 
             <TextView
@@ -453,7 +453,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/userAccount"
+            android:src="@drawable/useraccount"
             />
 
         <TextView
@@ -472,7 +472,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/userAccount"
+            android:src="@drawable/useraccount"
             />
 
         <TextView
@@ -491,7 +491,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/userAccount"
+            android:src="@drawable/useraccount"
             />
 
         <TextView
