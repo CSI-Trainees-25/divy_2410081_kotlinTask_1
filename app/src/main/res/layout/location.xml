@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/layout_back">
+
+
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    
+    <ImageView
+
+        android:id="@+id/loc"
+        android:layout_width="240dp"
+        android:layout_height="170dp"
+        android:src="@drawable/location"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="96dp"
+        />
+
+    <TextView
+
+        android:id="@+id/location_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Location"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/loc"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch on your location to stay in tune with \n what's happening in your area"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/location_msg"
+        app:layout_constraintEnd_toStartOf="paren"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textColor="#7C7C7C"
+        android:id="@+id/location_para"
+/>
+
+    <TextView
+        android:id="@+id/zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/location_para"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Your Zone"
+        android:textSize="16sp"
+        android:textColor="#7C7C7C"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="89dp"
+
+        />
+
+    <TextView
+        android:id="@+id/zone_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/zone"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Banasree"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <View
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zone_detail"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+        android:layout_height="1dp"
+        android:background="#E2E2E2B2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/zone_detail"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Your Area"
+        android:textSize="16sp"
+        android:textColor="#7C7C7C"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/area_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/area"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       android:hint="Types of Your Area"
+        android:textSize="18sp"
+        android:textColor="#E2E2E2"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Submit"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintTop_toBottomOf="@id/area_detail"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
