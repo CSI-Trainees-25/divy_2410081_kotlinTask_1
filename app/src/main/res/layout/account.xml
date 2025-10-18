@@ -4,36 +4,66 @@
     android:layout_height="match_parent">
 
 
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        />
+
+
+
     <LinearLayout
+        android:layout_below="@+id/topNav"
         android:layout_width="match_parent"
         android:id="@+id/username"
+
         android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:padding="20dp"
-        android:orientation="vertical"
+
+        android:layout_marginTop="31dp"
+       android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
 
 
 
+        android:orientation="horizontal"
         >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rohan Raj"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/user_img"
+            android:layout_marginRight="20dp"
+
+
             />
 
-        <TextView
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Rohan@gmail.com"
-            />
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohan Raj"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:fontFamily="@font/gilroy_bold"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohan@gmail.com"
+                />
+        </LinearLayout>
 
 
 
@@ -48,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/username"
         android:padding="15dp"
+
         android:orientation="vertical"
         >
 
@@ -58,15 +89,25 @@
             android:padding="15dp"
             android:id="@+id/menu"
             >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/order"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:fontFamily="@font/gilroy_bold"
+
                 android:layout_height="wrap_content"
                 android:text="Orders"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-
-
-
+                android:layout_weight="10"
+                android:layout_marginStart="24dp"
                 >
 
             </TextView>
@@ -78,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -86,14 +127,24 @@
             android:gravity="center_vertical"
             android:padding="15dp"
             >
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/my_details"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/gilroy_bold"
+
                 android:layout_height="wrap_content"
                 android:text="My Details"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-
-
+                android:layout_weight="10"
                 >
 
             </TextView>
@@ -103,22 +154,34 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
+
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="15dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delivery Address"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/my_location"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:fontFamily="@font/gilroy_bold"
 
+                android:layout_width="0dp"
+                android:layout_marginStart="24dp"
 
-            >
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="10"
+                >
 
         </TextView>
     </LinearLayout>
@@ -128,22 +191,34 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
+
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="15dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Payment Method"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/payment"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:fontFamily="@font/gilroy_bold"
 
+                android:layout_marginStart="24dp"
 
-            >
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="10"
+                >
 
         </TextView>
     </LinearLayout>
@@ -153,7 +228,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
 
         <LinearLayout
         android:layout_width="match_parent"
@@ -161,15 +236,25 @@
         android:gravity="center_vertical"
         android:padding="15dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Promo card"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/promo_card"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/gilroy_bold"
 
-
-            >
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Promo Card"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="10"
+                >
 
         </TextView>
     </LinearLayout>
@@ -178,21 +263,31 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:padding="15dp"
             >
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/notifications"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_marginStart="24dp"
+
                 android:layout_height="wrap_content"
                 android:text="Notifications"
+                android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-
-
+                android:layout_weight="10"
                 >
 
             </TextView>
@@ -202,7 +297,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
 
         <LinearLayout
         android:layout_width="match_parent"
@@ -210,15 +305,25 @@
         android:gravity="center_vertical"
         android:padding="15dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Help"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/help"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/gilroy_bold"
 
-
-            >
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="10"
+                >
 
         </TextView>
     </LinearLayout>
@@ -227,7 +332,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
 
         <LinearLayout
         android:layout_width="match_parent"
@@ -235,15 +340,25 @@
         android:gravity="center_vertical"
         android:padding="15dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/about"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/gilroy_bold"
 
-
-            >
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="10"
+                >
 
         </TextView>
     </LinearLayout>
@@ -252,17 +367,20 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="0dp"
-            android:background="@color/black" />
+            android:background="#E2E2E2" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Log Out"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/account_logout"
-
-            android:textColor="@color/purple_700"
-            android:layout_margin="24dp"
+            android:textColor="#53B175"
+            android:layout_marginTop="52dp"
             android:padding="20dp"
+            android:fontFamily="@font/gilroy_bold"
+
 
             />
 
@@ -286,6 +404,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
+
             android:gravity="center">
 
             <ImageView
@@ -295,6 +414,8 @@
                 />
 
             <TextView
+                android:fontFamily="@font/gilroy_bold"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Account"
@@ -316,6 +437,7 @@
                 />
 
             <TextView
+                android:fontFamily="@font/gilroy_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Account"
