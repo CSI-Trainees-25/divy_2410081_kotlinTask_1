@@ -4,22 +4,28 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-
 
     >
 
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="Find Products"
+        android:fontFamily="@font/gilroy_bold"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textAlignment="center"
         android:id="@+id/heading"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
 
         />
 
@@ -29,30 +35,39 @@
         android:hint="Search Store"
         android:padding="16dp"
         android:background="@drawable/search"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
 
         />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        >
+
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
             android:alignmentMode="alignMargins"
-            android:padding="4dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
             android:columnOrderPreserved="false">
 
-            <!-- CARD 1 -->
+
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
                 android:layout_margin="8dp"
                 android:layout_columnWeight="1"
-                android:elevation="4dp"
-                card_view:cardCornerRadius="12dp">
+                card_view:cardBackgroundColor="#7053B175"
+              card_view:cardUseCompatPadding="false"
+                android:elevation="0dp"
+                card_view:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -62,29 +77,32 @@
                     android:padding="12dp">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="111dp"
+                        android:layout_height="75dp"
                         android:src="@drawable/fruits"
+                        android:scaleType="centerCrop"
                         android:contentDescription="Fruits" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Fruits"
+                        android:text="Fresh Fruits % \nVegetables"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="8dp"/>
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="27dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- CARD 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
                 android:layout_margin="8dp"
+                card_view:cardBackgroundColor="#70F8A44C"
                 android:layout_columnWeight="1"
-                android:elevation="4dp"
-                card_view:cardCornerRadius="12dp">
+
+                card_view:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -94,22 +112,169 @@
                     android:padding="12dp">
 
                     <ImageView
-                        android:layout_width="80dp"
+                        android:layout_width="111dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/vegetables"
-                        android:contentDescription="Vegetables" />
+                        android:src="@drawable/cooking_oil"
+                        android:contentDescription="Fruits"
+                        android:scaleType="centerCrop"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vegetables"
+                        android:text="Cooking Oil and \nGhee"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="8dp"/>
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="27dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Add more cards (3–6) below similarly -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                android:elevation="0dp"
+                card_view:cardBackgroundColor="#70F7A593"
+                card_view:cardCornerRadius="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="111dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/meat"
+                        android:contentDescription="Fruits"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meat and Fish"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="27dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="0dp"
+                card_view:cardBackgroundColor="#70D3B0E0"
+            card_view:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="111dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bakery"
+                    android:contentDescription="Fruits"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bakery and \nSnacks"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="27dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="0dp"
+                card_view:cardBackgroundColor="#70FDE598"
+            card_view:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="111dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dairy"
+                    android:contentDescription="Fruits"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dairy and Eggs"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="27dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:elevation="0dp"
+                card_view:cardBackgroundColor="#70B7DFF5"
+            card_view:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="111dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/beverages"
+                    android:contentDescription="Fruits"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beverages"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="27dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
 
         </GridLayout>
     </ScrollView>
