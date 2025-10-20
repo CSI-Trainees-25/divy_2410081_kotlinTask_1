@@ -66,6 +66,8 @@
             android:textStyle="bold"
             android:paddingStart="29dp"
             android:paddingEnd="29dp"
+            android:textAllCaps="false"
+            android:id="@+id/start_app"
             />
 
 
