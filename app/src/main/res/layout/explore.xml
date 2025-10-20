@@ -7,12 +7,7 @@
 
     >
 
-    <include
-        android:id="@+id/topNav"
-        layout="@layout/top_nav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+
 
     <TextView
         android:layout_width="match_parent"
@@ -46,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:fillViewport="true"
         >
 
 
@@ -237,7 +233,11 @@
         </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
+
+                android:clickable="true"
+                android:focusable="true"
+
+                android:layout_width="0dp"
             android:layout_height="180dp"
             android:layout_margin="8dp"
             android:layout_columnWeight="1"
@@ -253,13 +253,19 @@
                 android:padding="12dp">
 
                 <ImageView
+
                     android:layout_width="111dp"
                     android:layout_height="80dp"
                     android:src="@drawable/beverages"
                     android:contentDescription="Fruits"
                     android:scaleType="centerCrop"/>
 
-                <TextView
+                <Button
+                    android:id="@+id/beveragescard"
+
+                    android:clickable="true"
+                    android:focusable="true"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Beverages"

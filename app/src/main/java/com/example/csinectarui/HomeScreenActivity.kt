@@ -23,12 +23,14 @@ class HomeScreenActivity : AppCompatActivity() {
         val navExplore = findViewById<Button>(R.id.nav_explore)
         val navAccount=findViewById<Button>(R.id.nav_account)
         val navFav=findViewById<Button>(R.id.nav_fav)
+        val navCart=findViewById<Button>(R.id.nav_cart)
 
 
         navHome.setOnClickListener { loadFragment(HomeFragment()) }
         navExplore.setOnClickListener { loadFragment(ExploreFragment()) }
         navAccount.setOnClickListener { loadFragment(AccountFragment()) }
         navFav.setOnClickListener({loadFragment(FavouriteFragment())})
+        navCart.setOnClickListener({loadFragment(CardFragment())})
 
 
     }
