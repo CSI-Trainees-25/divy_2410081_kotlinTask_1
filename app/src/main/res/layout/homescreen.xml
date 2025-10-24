@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,7 +8,7 @@
     <!-- Scrollable content -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:fillViewport="true">
 
@@ -52,7 +53,475 @@
                 android:layout_height="114dp"
                 android:src="@drawable/fresh_vegetables"
                 android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclusive Offers"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="horizontal">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       >
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="260dp"
+
+                           android:layout_margin="8dp"
+                           card_view:cardUseCompatPadding="false"
+                           android:elevation="4dp"
+                           card_view:cardCornerRadius="18dp"
+                           >
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:orientation="vertical"
+                               >
+
+                               <ImageView
+                                   android:layout_marginTop="30dp"
+                                   android:id="@+id/banana_img"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="67dp"
+                                   android:scaleType="fitCenter"
+                                   android:src="@drawable/banana"/>
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginStart="15dp"
+                                       android:layout_marginEnd="15dp"
+                                       android:text="Organic Bananas"
+                                       android:fontFamily="@font/gilroy_bold"
+                                       android:textSize="20sp"
+                                       android:textColor="@color/black"
+                                       android:layout_marginTop="20dp"/>
+
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="7 Pcs, price/gram"
+                                       android:layout_marginStart="15dp"
+                                       android:layout_marginTop="5dp"
+                                       android:layout_marginEnd="15dp"/>
+
+                               </LinearLayout>
+
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginTop="36dp"
+
+                                   >
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:text="$4.99"
+                                       android:textColor="@color/black"
+                                       android:fontFamily="@font/gilroy_bold"
+                                       android:layout_marginStart="15dp"
+                                       android:layout_marginEnd="15dp"
+                                       android:textSize="20dp"
+                                       />
+
+                                   <Button
+                                       android:layout_width="45dp"
+                                       android:layout_height="45dp"
+                                       android:text="+"
+                                       android:fontFamily="@font/gilroy_bold"
+                                       android:textSize="28sp"
+                                       android:textColor="@color/white"
+
+                                       android:background="@drawable/button_rounded"
+                                       android:layout_marginStart="45dp"/>
+
+
+                               </LinearLayout>
+
+
+                           </LinearLayout>
+
+
+
+
+
+
+
+                       </androidx.cardview.widget.CardView>
+
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="wrap_content"
+                           android:layout_height="260dp"
+
+                           android:layout_margin="8dp"
+                           card_view:cardUseCompatPadding="false"
+                           android:elevation="4dp"
+                           card_view:cardCornerRadius="18dp"
+                           >
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:orientation="vertical"
+                               >
+
+                               <ImageView
+                                   android:layout_marginTop="30dp"
+
+                                   android:layout_width="match_parent"
+                                   android:layout_height="67dp"
+                                   android:scaleType="fitCenter"
+                                   android:src="@drawable/banana"/>
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical">
+
+
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginStart="15dp"
+                                       android:layout_marginEnd="15dp"
+                                       android:text="Organic Bananas"
+                                       android:fontFamily="@font/gilroy_bold"
+                                       android:textSize="20sp"
+                                       android:textColor="@color/black"
+                                       android:layout_marginTop="20dp"/>
+
+                                   <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:text="7 Pcs, price/gram"
+                                       android:layout_marginStart="15dp"
+                                       android:layout_marginTop="5dp"
+                                       android:layout_marginEnd="15dp"/>
+
+                               </LinearLayout>
+
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginTop="36dp"
+
+                                   >
+
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:text="$4.99"
+                                       android:textColor="@color/black"
+                                       android:fontFamily="@font/gilroy_bold"
+                                       android:layout_marginStart="15dp"
+                                       android:layout_marginEnd="15dp"
+                                       android:textSize="20dp"
+                                       />
+
+                                   <Button
+                                       android:layout_width="45dp"
+                                       android:layout_height="45dp"
+                                       android:text="+"
+                                       android:fontFamily="@font/gilroy_bold"
+                                       android:textSize="28sp"
+                                       android:textColor="@color/white"
+
+                                       android:background="@drawable/button_rounded"
+                                       android:layout_marginStart="45dp"/>
+
+
+                               </LinearLayout>
+
+
+                           </LinearLayout>
+
+
+
+
+
+
+
+                       </androidx.cardview.widget.CardView>
+
+
+                   </LinearLayout>
+
+
+
+
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Selling"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="173dp"
+                            android:layout_height="260dp"
+
+                            android:layout_margin="8dp"
+                            card_view:cardUseCompatPadding="false"
+                            android:elevation="4dp"
+                            card_view:cardCornerRadius="18dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_marginTop="30dp"
+
+                                    android:layout_width="173dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_height="67dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ginger"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:text="Ginger"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="20dp"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="250gm, price/gram"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="15dp"/>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="36dp"
+
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$4.99"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:textSize="20dp"
+                                        />
+
+                                    <Button
+                                        android:layout_width="45dp"
+                                        android:layout_height="45dp"
+                                        android:text="+"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:textSize="28sp"
+                                        android:textColor="@color/white"
+
+                                        android:background="@drawable/button_rounded"
+                                        android:layout_marginStart="45dp"/>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="260dp"
+                            android:layout_margin="8dp"
+                            card_view:cardUseCompatPadding="false"
+                            android:elevation="4dp"
+                            card_view:cardCornerRadius="18dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_marginTop="30dp"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="67dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/bell_pepper"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:text="Bell Pepper Red"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="20dp"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="7 Pcs, price/gram"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="15dp"/>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="36dp"
+
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$4.99"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:textSize="20dp"
+                                        />
+
+                                    <Button
+                                        android:layout_width="45dp"
+                                        android:layout_height="45dp"
+                                        android:text="+"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:textSize="28sp"
+                                        android:textColor="@color/white"
+
+                                        android:background="@drawable/button_rounded"
+                                        android:layout_marginStart="45dp"/>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
         </LinearLayout>
+
+
+
 
     </ScrollView>
 

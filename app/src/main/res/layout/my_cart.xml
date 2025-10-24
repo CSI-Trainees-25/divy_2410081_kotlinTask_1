@@ -20,480 +20,488 @@
         android:textStyle="bold"/>
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:orientation="vertical"
-        android:layout_gravity="center_vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         >
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#E2E2E2B2"
-
-            />
 
         <LinearLayout
-
-            android:id="@+id/favourite_item1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:layout_marginBottom="18dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
             >
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="64dp"
-                android:src="@drawable/bell_pepper"
-                android:scaleType="fitCenter"
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E2E2E2B2"
+
                 />
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="32dp"
-                android:paddingBottom="10dp"
-                >
 
+                android:id="@+id/favourite_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/bell_pepper"
+                    android:scaleType="fitCenter"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="32dp"
+                    android:paddingBottom="10dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Bell pepper Red"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1kg, Price"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="-"
+                            android:textColor="#B3B3B3"
+                            android:textSize="34sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginEnd="17dp"
+                            />
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="+"
+                            android:textColor="#53B175"
+                            android:textSize="30sp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:text="$4.99"
+                    android:fontFamily="@font/gilroy_bold"
                     android:textColor="@color/black"
-                    android:text="Bell pepper Red"
-                    android:fontFamily="@font/gilroy_bold"
-                    android:textStyle="bold"/>
+                    android:layout_weight="0"
+                    android:layout_marginRight="25dp"
+                    android:textSize="18sp"
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1kg, Price"
-                    android:layout_marginBottom="12dp"
-                    android:textColor="#7C7C7C"
-                    android:textSize="14sp"
                     />
 
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E2E2E2B2"
+                android:layout_marginBottom="0dp" />
+
+
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:id="@+id/favourite_item2"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="18dp"
+
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/egg"
+                    android:scaleType="centerCrop"
+
+                    />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp"
-                    android:gravity="center_vertical"
-                   >
+                    android:orientation="vertical"
+                    android:layout_marginStart="32dp"
 
-                    <Button
-                       android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="-"
-                        android:textColor="#B3B3B3"
-                        android:textSize="34sp"/>
+                    >
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
                         android:textSize="16sp"
+                        android:text="Egg Chicken Red"
                         android:fontFamily="@font/gilroy_bold"
-android:layout_marginStart="17dp"
-                        android:layout_marginEnd="17dp"
+
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="355ml, Price"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp"
                         />
 
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="+"
-                        android:textColor="#53B175"
-                        android:textSize="30sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="-"
+                            android:textColor="#B3B3B3"
+                            android:textSize="34sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginEnd="17dp"
+                            />
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="+"
+                            android:textColor="#53B175"
+                            android:textSize="30sp"/>
 
 
+
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1.99"
+                    android:fontFamily="@font/gilroy_bold"
+
+                    android:layout_weight="0"
+                    android:layout_marginRight="25dp"
+                    android:textSize="16sp"
+
+                    />
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E2E2E2B2"
+                />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:id="@+id/favourite_ite3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="$4.99"
+                android:layout_marginBottom="18dp"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="64dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/banana"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="32dp"
+
+                    >
+
+
+                    <TextView
+                        android:fontFamily="@font/gilroy_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Organic Bananas"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12kg, Price"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="-"
+                            android:textColor="#B3B3B3"
+                            android:textSize="34sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginEnd="17dp"
+                            />
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="+"
+                            android:textColor="#53B175"
+                            android:textSize="30sp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/gilroy_bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$3.00"
+                    android:layout_weight="0"
+                    android:layout_marginRight="25dp"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E2E2E2B2"
+                />
+
+
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:id="@+id/favourite_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ginger"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="32dp"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/gilroy_bold"
+
+                        android:text="Ginger"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250gm, Price"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="-"
+                            android:textColor="#B3B3B3"
+                            android:textSize="34sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginEnd="17dp"
+                            />
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/add_btn"
+                            android:text="+"
+                            android:textColor="#53B175"
+                            android:textSize="30sp"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/gilroy_bold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$2.99"
+                    android:layout_weight="0"
+                    android:layout_marginRight="25dp"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:text="Go To Checkout"
+                android:background="@drawable/button_rounded"
+                android:textColor="@color/white"
                 android:fontFamily="@font/gilroy_bold"
-android:textColor="@color/black"
-                android:layout_weight="0"
-                android:layout_marginRight="25dp"
                 android:textSize="18sp"
-
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="10dp"
                 />
+
 
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#E2E2E2B2"
-            android:layout_marginBottom="0dp" />
-
-
-
-        <LinearLayout
-            android:layout_gravity="center_vertical"
-            android:id="@+id/favourite_item2"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="18dp"
-
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            >
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="64dp"
-                android:src="@drawable/egg"
-                android:scaleType="centerCrop"
-
-                />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="32dp"
-
-                >
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:text="Egg Chicken Red"
-                    android:fontFamily="@font/gilroy_bold"
-
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="355ml, Price"
-                    android:layout_marginBottom="12dp"
-                    android:textColor="#7C7C7C"
-                    android:textSize="14sp"
-                    />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center_vertical"
-                    >
-
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="-"
-                        android:textColor="#B3B3B3"
-                        android:textSize="34sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/gilroy_bold"
-                        android:layout_marginStart="17dp"
-                        android:layout_marginEnd="17dp"
-                        />
-
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="+"
-                        android:textColor="#53B175"
-                        android:textSize="30sp"/>
-
-
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$1.99"
-                android:fontFamily="@font/gilroy_bold"
-
-                android:layout_weight="0"
-                android:layout_marginRight="25dp"
-                android:textSize="16sp"
-
-                />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#E2E2E2B2"
-            />
-
-        <LinearLayout
-            android:layout_gravity="center_vertical"
-            android:id="@+id/favourite_ite3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
-            android:padding="16dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            >
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="64dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/banana"
-
-                />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="32dp"
-
-                >
-
-
-                <TextView
-                    android:fontFamily="@font/gilroy_bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:text="Organic Bananas"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="12kg, Price"
-                    android:layout_marginBottom="12dp"
-                    android:textColor="#7C7C7C"
-                    android:textSize="14sp"
-                    />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center_vertical"
-                    >
-
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="-"
-                        android:textColor="#B3B3B3"
-                        android:textSize="34sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/gilroy_bold"
-                        android:layout_marginStart="17dp"
-                        android:layout_marginEnd="17dp"
-                        />
-
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="+"
-                        android:textColor="#53B175"
-                        android:textSize="30sp"/>
-
-
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <TextView
-                android:fontFamily="@font/gilroy_bold"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$3.00"
-                android:layout_weight="0"
-                android:layout_marginRight="25dp"
-                android:textSize="16sp"
-
-                />
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#E2E2E2B2"
-            />
-
-
-
-        <LinearLayout
-            android:layout_gravity="center_vertical"
-            android:id="@+id/favourite_item4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            >
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="64dp"
-                android:src="@drawable/ginger"
-                />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="32dp"
-
-                >
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/gilroy_bold"
-
-                    android:text="Ginger"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="250gm, Price"
-                    android:layout_marginBottom="12dp"
-                    android:textColor="#7C7C7C"
-                    android:textSize="14sp"
-                    />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center_vertical"
-                    >
-
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="-"
-                        android:textColor="#B3B3B3"
-                        android:textSize="34sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/gilroy_bold"
-                        android:layout_marginStart="17dp"
-                        android:layout_marginEnd="17dp"
-                        />
-
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:background="@drawable/add_btn"
-                        android:text="+"
-                        android:textColor="#53B175"
-                        android:textSize="30sp"/>
-
-
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <TextView
-                android:fontFamily="@font/gilroy_bold"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$2.99"
-                android:layout_weight="0"
-                android:layout_marginRight="25dp"
-                android:textSize="16sp"
-
-                />
-
-        </LinearLayout>
-
-
-
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:text="Go To Checkout"
-            android:background="@drawable/button_rounded"
-            android:textColor="@color/white"
-            android:fontFamily="@font/gilroy_bold"
-            android:textSize="18sp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="10dp"
-            />
-
-
-    </LinearLayout>
+    </ScrollView>
 
 
 

@@ -17,101 +17,115 @@
 
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get Your Groceries \nwith Nectar"
-        android:fontFamily="@font/gilroy_bold"
-        android:textSize="26sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="49dp"/>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:fillViewport="true"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
 
-    <LinearLayout
-        android:id="@+id/countryCodeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="30dp"
-        >
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Get Your Groceries \nwith Nectar"
+              android:fontFamily="@font/gilroy_bold"
+              android:textSize="26sp"
+              android:textColor="@color/black"
+              android:layout_marginStart="25dp"
+              android:layout_marginTop="49dp"/>
 
-        <ImageView
-            android:id="@+id/flagIcon"
-            android:layout_width="30dp"
-            android:layout_height="25dp"
-            android:src="@drawable/img"
-            android:gravity="center_vertical"/>
+          <LinearLayout
+              android:id="@+id/countryCodeLayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:layout_marginStart="24dp"
+              android:layout_marginEnd="24dp"
+              android:layout_marginTop="30dp"
+              >
 
-        <TextView
-            android:id="@+id/countryCode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+880"
-            android:fontFamily="@font/gilroy_bold"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="8dp"
-            />
+              <ImageView
+                  android:id="@+id/flagIcon"
+                  android:layout_width="30dp"
+                  android:layout_height="25dp"
+                  android:src="@drawable/img"
+                  android:gravity="center_vertical"/>
 
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#E2E2E2B2"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-
-
-        />
+              <TextView
+                  android:id="@+id/countryCode"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="+880"
+                  android:fontFamily="@font/gilroy_bold"
+                  android:textColor="@color/black"
+                  android:textSize="18sp"
+                  android:layout_marginStart="8dp"
+                  />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Or connect with social media"
-        android:textSize="16sp"
-        android:layout_marginStart="88dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginTop="40dp"/>
+          </LinearLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="#E2E2E2B2"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="24dp"
+              android:layout_marginEnd="24dp"
+
+
+              />
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Or connect with social media"
+              android:textSize="16sp"
+              android:layout_marginStart="88dp"
+              android:layout_marginEnd="88dp"
+              android:layout_marginTop="40dp"/>
 
 
 
 
-    <Button
-        android:id="@+id/enter_app"
-        android:layout_width="match_parent"
-        android:layout_height="67dp"
-        android:background="@drawable/google"
-        android:text="Continue with Google"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:fontFamily="@font/gilroy_bold"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="37dp"
-        />
+          <Button
+              android:id="@+id/enter_app"
+              android:layout_width="match_parent"
+              android:layout_height="67dp"
+              android:background="@drawable/google"
+              android:text="Continue with Google"
+              android:textColor="@color/white"
+              android:textAllCaps="false"
+              android:textSize="18sp"
+              android:fontFamily="@font/gilroy_bold"
+              android:layout_marginStart="24dp"
+              android:layout_marginEnd="24dp"
+              android:layout_marginTop="37dp"
+              />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="67dp"
-        android:background="@drawable/facebook"
-        android:text="Continue with Facebook"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:fontFamily="@font/gilroy_bold"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="20dp"
-        />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="67dp"
+              android:background="@drawable/facebook"
+              android:text="Continue with Facebook"
+              android:textColor="@color/white"
+              android:textAllCaps="false"
+              android:textSize="18sp"
+              android:fontFamily="@font/gilroy_bold"
+              android:layout_marginStart="24dp"
+              android:layout_marginEnd="24dp"
+              android:layout_marginTop="20dp"
+              />
+      </LinearLayout>
+  </ScrollView>
 
 
 </LinearLayout>

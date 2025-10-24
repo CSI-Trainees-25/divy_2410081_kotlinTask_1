@@ -54,14 +54,14 @@
             android:textColor="#7C7C7C"
             android:fontFeatureSettings="18sp"
             android:textStyle="bold"
-
-
             android:textSize="16dp"
             android:textFontWeight="600"
             />
         <EditText
+            android:id="@+id/user_mail"
+            android:textSize="20sp"
+            android:layout_height="50dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="abc@gmail.com"/>
 
 
@@ -76,6 +76,7 @@
         >
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Password"
@@ -87,8 +88,10 @@
             android:textFontWeight="600"
             />
         <EditText
+            android:id="@+id/user_pass"
+            android:hint="enter password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:inputType="textPassword"
             />
 
@@ -97,6 +100,8 @@
     </LinearLayout>
 
     <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:textAlignment="viewEnd"
         android:text="Forgot Password"
@@ -110,6 +115,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/login_app"
         android:background="@drawable/button_rounded"
         android:textColor="@color/white"
         android:padding="20dp"/>

@@ -5,20 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Container where different screens will load -->
+
     <FrameLayout
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- Bottom Navigation -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-
         android:elevation="4dp"
-
         android:gravity="center"
         android:orientation="horizontal"
         >
@@ -31,6 +29,9 @@
             android:gravity="center">
 
             <ImageView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/nav_home_icon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/shop"
@@ -38,6 +39,7 @@
 
             <Button
                 android:id="@+id/nav_home"
+                android:background="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Shop"
@@ -54,12 +56,15 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/nav_explore_icon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/explore"
                 />
 
             <Button
+                android:background="@color/white"
+
                 android:id="@+id/nav_explore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,12 +82,15 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/nav_cart_icon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/cart"
                 />
 
             <Button
+                android:background="@color/white"
+
                 android:id="@+id/nav_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -101,12 +109,15 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/nav_fvrt_icon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/fvrt"
                 />
 
             <Button
+                android:background="@color/white"
+
                 android:id="@+id/nav_fav"
                 android:layout_width="wrap_content"
                 android:fontFamily="@font/gilroy_bold"
@@ -123,12 +134,15 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/nav_account_icon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/account"
                 />
 
             <Button
+                android:background="@color/white"
+
                 android:id="@+id/nav_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
